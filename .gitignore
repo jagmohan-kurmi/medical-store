@@ -1,0 +1,33 @@
+﻿# Configuration & Secrets
+config/config.php
+config/config.production.php
+.env
+.env.*
+!.env.example
+
+# Private Hosting & Deployment
+.hostinger/
+scripts/build-deploy.ps1
+dist/
+
+# Uploaded Files & Storage (Preserve structure via .gitkeep)
+storage/bills/*
+!storage/bills/.gitkeep
+!storage/bills/.htaccess
+storage/logs/*
+!storage/logs/.gitkeep
+storage/temp/*
+
+# OS & Editor Artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.suo
+*.user
+
+# PHP / Testing Cache
+vendor/
+.phpunit.result.cache
+.phpunit.cache/
